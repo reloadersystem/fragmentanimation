@@ -43,6 +43,7 @@ public class FragmentA extends Fragment {
                 FragmentB fragmentB= new FragmentB();
 
                 manager.beginTransaction()
+                        //.setCustomAnimations(R.anim.enter_right_to_left,R.anim.exit_right_to_left,R.anim.fade_in, R.anim.fade_out)
                         .setCustomAnimations(R.anim.enter_right_to_left,R.anim.exit_right_to_left, R.anim.exit_left_to_right,R.anim.exit_left_to_right)
                         .replace(R.id.frame, fragmentB)
                         .addToBackStack(null)
